@@ -1,0 +1,40 @@
+<div class="login-box">
+
+  <div class="user-box">
+    <input type="text" [(ngModel)]="userName" name="" required="" />
+    <label>Your name</label>
+  </div>
+  <div class="user-box">
+    <input type="text" [(ngModel)]="roomId" name="" required="" />
+    <label>ID Room</label>
+  </div>
+
+  <button class="btn" (click)="joinRoom(roomId)">Join Room</button>
+
+</div>
+
+
+<div id="site-title">
+  <h1 style="color: white;" >Chat App <i class="fa fa-commenting-o"></i></h1>
+</div>
+
+<div id="container">
+  <div id="main-container">
+    <div *ngFor="let msg of messages">
+      <div class="name" style="display: flex; flex-direction: row; align-items: center;"> 
+        <img style="width: 30px; height: 30px; border-radius: 50%; "  src="https://cdn.tuoitre.vn/thumb_w/640/471584752817336320/2023/2/13/tieu-su-ca-si-rose-blackpink-12-167628252304049682913.jpg" >
+        <b style="margin-left: 10px;">{{ msg.from }}</b>
+      </div>
+      <p>- {{ msg.msg }}</p>
+    </div>
+  </div>
+
+
+  <div id="controller">
+    <textarea [(ngModel)]="newMassage" id="textbox" class="form-control" rows="2"
+      placeholder="Type your message"></textarea>
+
+      <button class="btn" (click)="sendMessage(newMassage)" >Send</button>
+
+  </div>
+</div>

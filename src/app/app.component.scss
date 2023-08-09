@@ -1,0 +1,194 @@
+.login-box {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.navbar {
+	border: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+#site-title {
+	padding-top: 100px;
+	width: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+	margin: 0;
+    background-color: rgb(238, 238, 238);
+    font-family: 'Helvetica Neue', 'Roboto', sans-serif;
+  height: 800px;
+}
+
+#container {
+	width: 360px;
+	height: 500px;
+	overflow-y: auto;
+    margin: 0px auto;
+    background-color: rgb(228, 241, 254);
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+	box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+#main-container {
+	width: 320px;
+	height: 350px;
+	overflow-y: auto;
+    margin: 0px auto;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 10px 20px 10px 20px;
+    color: #000;
+}
+
+#controller {
+	width: 360px;
+	height: 100px;
+  margin: 0px auto;
+  margin-top: 7px;
+}
+
+.form-control {
+	border: none;
+}
+
+textarea {
+  width: 360px;
+	margin-top: 7px;
+	resize: none;
+}
+
+
+
+.gif-container {
+	max-width: 150px;
+	height: 100px; 
+  border-radius: 4px;
+	display: flex;
+	float: left;
+}
+
+.bubble {
+    margin-top: 5px;
+    width: 75%;
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.user-input {
+    float: right;
+    background-color: #1289fe;
+    color: #fff;
+}
+
+.bot-output {
+    float: left;
+    background-color: #e5e5ea;
+    color: #000;
+}
+
+.btn {
+  margin-top: 20px;
+	float: right;
+}
+
+
+.btn {
+  align-items: center;
+  background-color: #0A66C2;
+  border: 0;
+  border-radius: 10%;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 35px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.btn:hover,
+.btn:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.btn:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.btn:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
